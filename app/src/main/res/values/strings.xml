@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SplashOfLinkedIn</string>
+
+    <string name="splash_second_unanim">建立联系</string>
+    <string name="splash_second_anim">已成为联系人</string>
+</resources>

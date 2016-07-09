@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/lin_ball"
+        android:layout_above="@+id/lin_color_track"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ball1"
+            android:src="@drawable/ball_big_gray"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ball2"
+            android:src="@drawable/ball_small_gray"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ball3"
+            android:src="@drawable/ball_small_gray"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/ball4"
+            android:src="@drawable/ball_small_gray"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_color_track"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.weishen.splashoflinkedin.ColorTrackView
+            android:id="@+id/registe"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:progress="0"
+            android:layout_marginRight="23dp"
+            app:text="立即加入"
+            app:text_origin_color="#ffffffff"
+            app:bg_origin_color = "#ff069DD6"
+            app:text_size="18sp"
+            android:layout_height="match_parent"/>
+        <com.weishen.splashoflinkedin.ColorTrackView
+            android:id="@+id/login"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:text="登录"
+            app:text_origin_color="#ff069DD6"
+            app:bg_origin_color = "#ffffffff"
+            app:border_origin_color = "#ff069DD6"
+            app:text_size="18sp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</RelativeLayout>
